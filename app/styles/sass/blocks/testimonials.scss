@@ -1,0 +1,121 @@
+.testimonials {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0 80px;
+    }
+
+    &__pre-title {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        text-align: center;
+        margin-bottom: 72px;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__slider {
+        padding-top: 100px;
+        padding-bottom: 56px;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: "";
+            display: block;
+            width: calc(100% - 200px);
+            height: 100%;
+            background-image: url(../images/dist/testimonials-bg.jpg);
+            background-size: cover;
+            background-position: bottom center;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
+
+    &-slide {
+        padding: 3rem 2.5rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+
+        &__rating {
+            margin-bottom: 1.25rem;
+
+        }
+
+        &__text {
+            margin-bottom: 1.25rem;
+        }
+
+        &__row {
+            display: flex;
+
+        }
+
+        &__ava {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 14px;
+        }
+
+        &__name {
+            font-weight: 700;
+            color: #313131;
+            margin-bottom: 0.5rem;
+        }
+
+        &__post {
+            margin-bottom: 0;
+        }
+    }
+
+    &-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 1199px) {
+        &__description {
+            margin-bottom: 40px;
+        }
+
+        &__slider {
+            padding: 40px 0;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__slider {
+            &:before {
+                width: calc(100% - 100px);
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__slider {
+            padding-bottom: 1.5rem;
+
+            &:before {
+                width: calc(100% - 80px);
+                background: #e7e8ea;
+            }
+        }
+
+        &-navigation {
+            margin-top: 1.5rem;
+        }
+    }
+
+}

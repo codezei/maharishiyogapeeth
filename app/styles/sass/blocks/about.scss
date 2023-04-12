@@ -1,0 +1,136 @@
+.about {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0 70px;
+    }
+
+    color: #fff;
+    background: #024547;
+
+    &__title {
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        padding-top: 40px;
+        font-size: 18px;
+    }
+
+    &__slider {
+        padding: 40px 40px 0;
+        background-image: url(../images/dist/figure-1.svg), url(../images/dist/figure-3.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            right: 0;
+            top: 0;
+            background-image: url(../images/dist/figure-2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 2;
+        }
+    }
+
+    &-slider {
+        padding-bottom: 40px !important;
+    }
+
+    &-pagination {
+        bottom: 0 !important;
+
+        .swiper-pagination-bullet {
+            background: #678F91;
+            width: 8px;
+            height: 8px;
+            margin: 0 6px;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #fff;
+        }
+    }
+
+    &-slide {
+        height: 100% !important;
+
+        &__frame {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__preview {
+            position: relative;
+
+            &-img {
+                width: 100%;
+            }
+
+            &-play {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__header {
+            margin-bottom: 1.5rem;
+        }
+
+        &__text {
+            padding-top: 0;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__slider {
+            padding: 1.5rem 1.5rem 0;
+        }
+
+        &__title {
+            br {
+                display: none;
+            }
+        }
+    }
+}

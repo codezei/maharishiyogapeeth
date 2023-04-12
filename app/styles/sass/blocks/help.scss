@@ -1,0 +1,95 @@
+.help {
+    background: #024547;
+    color: #fff;
+
+    @media screen and (min-width: 1200px) {
+        padding: 80px 0;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+    }
+
+    &__map {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__row {
+            flex-direction: column-reverse;
+        }
+
+        &__map {
+            margin-top: 1.5rem;
+            height: 350px;
+        }
+    }
+}
+
+.form {
+    &__row {
+        display: flex;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    &__col {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    &__textarea {
+        height: 190px;
+        resize: none;
+    }
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #D9D9DF;
+    border-radius: 3px;
+    padding: 1rem 1.25rem;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.input-wrap {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.input[required]+.input-star {
+    display: block;
+}
+
+.input-star {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 10;
+
+    &:before {
+        content: url("data:image/svg+xml,%3Csvg width='8' height='9' viewBox='0 0 8 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M3.77673 5.23459L0.535889 6.84789L3.55347 4.84789L0.535889 2.84789L3.77673 4.46119L3.99999 0.847891L4.22325 4.46119L7.46409 2.84789L4.44651 4.84789L7.46409 6.84789L4.22325 5.23459L3.99999 8.84789L3.77673 5.23459Z' stroke='%2301021D' stroke-width='0.7'/%3E%3C/svg%3E%0A");
+    }
+}

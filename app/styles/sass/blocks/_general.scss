@@ -1,0 +1,209 @@
+// GENERAL PROJECT STYLES
+:root {
+    scroll-behavior: unset !important;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: unset !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: unset !important;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Lexend';
+    line-height: 1.2;
+    color: #2B1501;
+}
+
+.white {
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.block {
+    @media screen and (max-width: 1199px) {
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 0;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 2.25rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+.title-less {
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+h1 span,
+h2 span,
+h3 span {
+    color: #C9B582;
+}
+
+.main-title {
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    background: #BB4D50;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 400ms;
+    border: 1px solid #BB4D50;
+
+    &:hover {
+        background: #bb363a;
+        color: #fff;
+        border: 1px solid #bb363a;
+    }
+
+    &--light {
+        background: rgba(187, 77, 80, 0.05);
+        border: 1px solid rgba(187, 77, 80, 0.1);
+        color: #BB4D50;
+
+        &:hover {
+            background: #bb363a;
+            color: #fff;
+            border: 1px solid #bb363a;
+        }
+    }
+
+    &__arrow {
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+}
+
+.pre-title {
+    color: #540B5D;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    &__img {
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

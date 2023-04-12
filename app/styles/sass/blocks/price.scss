@@ -1,0 +1,168 @@
+.price {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0;
+    }
+
+    &__pre-title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 96px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        &__title {
+            margin-bottom: 70px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__row {
+            justify-content: center;
+        }
+
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__title {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
+
+.course-price {
+    padding: 3rem;
+    background: #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 400ms;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #EDEDED;
+
+    &__name {
+        color: rgba(1, 2, 29, 0.7);
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &__duration {
+        margin-bottom: 56px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &__cost {
+        color: #BB4D50;
+        font-weight: 800;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__content {
+        margin-bottom: 94px;
+        width: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.06);
+        color: inherit;
+    }
+
+    &:hover &__btn {
+        background: #BB4D50;
+        color: #fff;
+    }
+
+    &:hover &__name {
+        color: #2B1501;
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding: 2.5rem;
+
+        &__duration {
+            margin-bottom: 46px;
+        }
+
+        &__content {
+            margin-bottom: 70px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 2rem;
+
+        &__duration {
+            margin-bottom: 2rem;
+        }
+
+        &__content {
+            margin-bottom: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__duration {
+            margin-bottom: 1.5rem;
+        }
+
+        &__content {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__name {
+            margin-bottom: 0.5rem;
+        }
+
+        &__content {
+            margin-bottom: 2rem;
+        }
+
+        &__row {
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
