@@ -178,6 +178,14 @@
         }
     }
 
-    @media screen and (max-width: 575px) {}
+    @media screen and (max-width: 575px) {
+        &__privacy {
+            margin-bottom: 10px;
+        }
+
+        &__social {
+            margin-bottom: 10px;
+        }
+    }
 
 }

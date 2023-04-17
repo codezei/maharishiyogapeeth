@@ -169,6 +169,7 @@ h3 span {
     text-decoration: none;
     transition: all 400ms;
     border: 1px solid #BB4D50;
+    line-height: 1.1;
 
     &:hover {
         background: #bb363a;
@@ -185,6 +186,19 @@ h3 span {
             background: #bb363a;
             color: #fff;
             border: 1px solid #bb363a;
+        }
+
+        text-decoration: none;
+    }
+
+    &--inversion {
+        border: 1px solid transparent;
+        background: transparent;
+
+        &:hover {
+            border: 1px solid #fff;
+            text-decoration: none;
+            background: transparent;
         }
     }
 

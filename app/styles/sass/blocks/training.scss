@@ -1,18 +1,10 @@
 .training {
-    &--dark {
-        color: #fff;
-        background: #024547;
+    &--bg {
+        background-image: url(../images/dist/logo.png), url(../images/dist/training-bg.jpg);
+        background-position: left 24px bottom 24px, center;
+        background-size: auto, cover;
+        background-repeat: no-repeat, no-repeat;
     }
-
-    &--dark &__title {
-        color: #fff;
-    }
-
-    &--dark &__description {
-        color: #fff;
-    }
-
-
 
     @media screen and (min-width: 1200px) {
         padding: 120px 0;
@@ -74,7 +66,7 @@
     &__title {
         position: relative;
         margin-bottom: 1rem;
-        color: #2B1501;
+        color: #5A0A66;
 
         &:before {
             content: "";

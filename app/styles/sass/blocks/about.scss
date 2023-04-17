@@ -1,13 +1,12 @@
 .about {
+    background-image: url(../images/dist/about-bg.jpg);
+
     @media screen and (min-width: 1200px) {
         padding: 120px 0 70px;
     }
 
-    color: #fff;
-    background: #024547;
-
     &__title {
-        color: #fff;
+        color: #5A0A66;
         margin-bottom: 0;
     }
 
@@ -61,7 +60,7 @@
         bottom: 0 !important;
 
         .swiper-pagination-bullet {
-            background: #678F91;
+            background: #BB4D50;
             width: 8px;
             height: 8px;
             margin: 0 6px;
@@ -70,7 +69,8 @@
         .swiper-pagination-bullet-active {
             width: 12px;
             height: 12px;
-            border: 2px solid #fff;
+            border: 2px solid #BB4D50;
+            background: rgba(187, 77, 80, 0.4);
         }
     }
 
@@ -119,6 +119,12 @@
     @media screen and (max-width: 767px) {
         &__title {
             margin-bottom: 1rem;
+        }
+
+        &__slider {
+            &:after {
+                display: none;
+            }
         }
     }
 

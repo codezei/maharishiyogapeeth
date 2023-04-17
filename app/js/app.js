@@ -58,6 +58,7 @@ function aboutSlider() {
 		autoHeight: true,
 		pagination: {
 			el: ".about-pagination",
+			clickable: true
 		},
 	});
 }
